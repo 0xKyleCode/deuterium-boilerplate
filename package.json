@@ -6,8 +6,8 @@
     "author": "Kyle Bromma <kbromma@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "start": "babel-node src",
-        "lint": "eslint src",
+        "start": "babel-node src/_server/koa-test.js",
+        "lint": "eslint src && flow",
         "test": "jest"
     },
     "babel": {
@@ -25,13 +25,16 @@
         "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
         "@babel/plugin-transform-runtime": "^7.1.0",
         "@babel/preset-env": "^7.1.6",
+        "@babel/preset-flow": "^7.0.0",
         "@babel/runtime-corejs2": "^7.1.5",
-        "@deuterium/babel-preset": "^1.0.1",
-        "@deuterium/eslint-config": "^1.0.3",
-        "@deuterium/prettier-config": "^1.0.3",
+        "@deuterium/babel-preset": "^1.0.4",
+        "@deuterium/eslint-config": "^1.0.4",
+        "@deuterium/jest-config": "^1.0.4",
+        "@deuterium/prettier-config": "^1.0.4",
         "babel-core": "7.0.0-bridge.0",
         "babel-eslint": "^10.0.1",
         "babel-jest": "^23.6.0",
+        "babel-preset-flow": "^6.23.0",
         "eslint": "^5.9.0",
         "eslint-config-airbnb": "^17.1.0",
         "eslint-config-prettier": "^3.3.0",
@@ -40,13 +43,14 @@
         "eslint-plugin-jsx-a11y": "^6.1.2",
         "eslint-plugin-prettier": "^3.0.0",
         "eslint-plugin-react": "^7.11.1",
-        "flow-bin": "^0.86.0",
+        "flow-bin": "^0.89.0",
         "jest": "^23.6.0",
         "prettier": "^1.15.2"
     },
     "dependencies": {
         "@babel/runtime": "^7.1.5",
-        "@deuterium/prettier-config": "^1.0.3",
-        "@deuterium/jest-config": "^1.0.3"
+        "@deuterium/env": "^1.2.1",
+        "@deuterium/koa": "^1.2.1",
+        "koa": "^2.6.2"
     }
 }

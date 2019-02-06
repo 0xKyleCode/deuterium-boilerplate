@@ -1,7 +1,7 @@
 // @flow
 
 import type { Route } from './routeType'
-import { helloWorld } from './test-routes'
+import { helloWorld } from './helloWorld'
 
 const routes: { helloWorld: Route } = {
     helloWorld,

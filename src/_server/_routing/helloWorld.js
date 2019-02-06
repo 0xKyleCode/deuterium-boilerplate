@@ -5,5 +5,6 @@ import type { Route } from './routeType'
 export const helloWorld: Route = {
     path: '/',
     pageComponent: 'Hello World',
+    type: 'GET',
     title: 'Test Page',
 }
